@@ -1565,7 +1565,7 @@ margin-top:10px;
 
   .about-value-card{
     max-width:100%;
-    width:100%;
+    width:auto;
     padding:22px;
   }
 }
