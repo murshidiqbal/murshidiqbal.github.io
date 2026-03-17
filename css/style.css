@@ -6,8 +6,9 @@ color:#222;
 }
 
 .container{
-width:90%;
-margin:auto;
+  width:90%;
+  max-width:1200px;
+  margin:auto;
 }
 
 header{
@@ -692,6 +693,285 @@ background-position:0% 50%;
 
 
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large tablets */
+@media (max-width: 992px){
+
+  .container{
+    width:92%;
+  }
+
+  .hero h1,
+  .about-hero h1,
+  .products-hero-content h1{
+    font-size:44px;
+    letter-spacing:2px;
+  }
+
+  .hero p,
+  .about-hero p,
+  .products-hero-content p{
+    font-size:18px;
+  }
+
+  .about-grid,
+  .mission-grid,
+  .values-grid,
+  .product-grid,
+  .why-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .about-grid,
+  .mission-grid{
+    gap:30px;
+  }
+
+  .values-content h2,
+  .why-choose h2,
+  .about-cta h2,
+  .products h2,
+  .mission-text h2,
+  .about-grid h2{
+    font-size:34px;
+  }
+
+  .hero{
+    height:520px;
+  }
+
+  .about-hero,
+  .products-hero{
+    height:420px;
+  }
+}
+
+
+/* Tablets and mobile */
+@media (max-width: 768px){
+
+  .container{
+    width:92%;
+  }
+
+  header{
+    padding:12px 0;
+  }
+
+  .nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .logo{
+    height:50px;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px 18px;
+  }
+
+  nav a{
+    margin-left:0;
+    font-size:15px;
+    padding:6px 0;
+  }
+
+  .hero{
+    height:460px;
+    padding:0 20px;
+  }
+
+  .hero-content,
+  .about-hero-content,
+  .products-hero-content{
+    max-width:100%;
+    padding:0 10px;
+  }
+
+  .hero h1,
+  .about-hero h1,
+  .products-hero-content h1{
+    font-size:34px;
+    letter-spacing:1px;
+    line-height:1.2;
+  }
+
+  .hero p,
+  .about-hero p,
+  .products-hero-content p{
+    font-size:17px;
+    line-height:1.6;
+  }
+
+  .about-hero,
+  .products-hero{
+    height:360px;
+    padding:0 20px;
+  }
+
+  .about-preview,
+  .mission,
+  .products,
+  .why-choose,
+  .about-cta,
+  .footer-top,
+  .core-values{
+    padding:60px 0;
+  }
+
+  .about-grid,
+  .mission-grid,
+  .values-grid,
+  .product-grid,
+  .why-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .about-grid h2,
+  .mission-text h2,
+  .products h2,
+  .values-content h2,
+  .why-choose h2,
+  .about-cta h2{
+    font-size:30px;
+  }
+
+  .about-grid p,
+  .mission-text p,
+  .card p,
+  .value-card p{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .card{
+    padding:20px;
+  }
+
+  .card img{
+    height:220px;
+  }
+
+  .why-box{
+    height:240px;
+    font-size:20px;
+  }
+
+  .why-box h3{
+    width:80%;
+    font-size:22px;
+  }
+
+  .value-card{
+    padding:24px;
+  }
+
+  .btn,
+  .btn-outline{
+    padding:12px 22px;
+    font-size:14px;
+  }
+
+  .footer-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px 14px;
+  }
+
+  .footer-nav a{
+    margin:0;
+  }
+
+  footer img{
+    height:44px;
+  }
+}
+
+
+/* Small mobile */
+@media (max-width: 480px){
+
+  body{
+    font-size:15px;
+  }
+
+  .logo{
+    height:44px;
+  }
+
+  .hero{
+    height:400px;
+  }
+
+  .about-hero,
+  .products-hero{
+    height:300px;
+  }
+
+  .hero h1,
+  .about-hero h1,
+  .products-hero-content h1{
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .hero p,
+  .about-hero p,
+  .products-hero-content p{
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  .about-grid h2,
+  .mission-text h2,
+  .products h2,
+  .values-content h2,
+  .why-choose h2,
+  .about-cta h2{
+    font-size:26px;
+  }
+
+  .card{
+    padding:18px;
+  }
+
+  .card img{
+    height:200px;
+  }
+
+  .why-box{
+    height:200px;
+  }
+
+  .why-box h3{
+    width:85%;
+    font-size:19px;
+  }
+
+  .value-card{
+    padding:20px;
+  }
+
+  .footer-top{
+    padding:45px 0;
+  }
+
+  .footer-bottom{
+    font-size:12px;
+    padding:12px 10px;
+  }
+}
+
+
 
 
 /* About Page */
@@ -1158,6 +1438,185 @@ margin-top:10px;
 
 
 
+/* =========================
+   ABOUT PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 1100px){
+
+  .about-company-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .about-services-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+  }
+
+  .about-values-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+  .industries-grid-images{
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+  }
+
+  .vision-content{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .about-hero{
+    height:360px;
+    padding:0 20px;
+  }
+
+  .about-hero-content{
+    max-width:100%;
+    padding:0 10px;
+  }
+
+  .about-hero h1{
+    font-size:34px;
+    letter-spacing:1px;
+    line-height:1.2;
+  }
+
+  .about-hero p{
+    font-size:16px;
+    line-height:1.6;
+  }
+
+  .about-company-section,
+  .about-services-section,
+  .industries-section,
+  .about-values-section{
+    padding:60px 0;
+  }
+
+  .vision-overlay{
+    padding:60px 0;
+  }
+
+  .about-company-grid,
+  .about-services-grid,
+  .industries-grid-images,
+  .about-values-grid,
+  .vision-content{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .about-company-text h2,
+  .about-services-section h2,
+  .industries-section h2,
+  .about-values-section h2,
+  .vision-box h2,
+  .mission-box h2{
+    font-size:30px;
+  }
+
+  .about-company-text p,
+  .vision-box p,
+  .mission-box p,
+  .about-value-card p,
+  .industry-overlay p,
+  .about-service-card p{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .about-service-card img{
+    height:220px;
+  }
+
+  .industry-card{
+    height:280px;
+  }
+
+  .industry-overlay{
+    padding:16px;
+  }
+
+  .industry-overlay h3{
+    font-size:20px;
+  }
+
+  .vision-box,
+  .mission-box{
+    padding:28px 22px;
+  }
+
+  .about-value-card{
+    max-width:100%;
+    width:100%;
+    padding:22px;
+  }
+}
+
+@media (max-width: 480px){
+
+  .about-hero{
+    height:300px;
+  }
+
+  .about-hero h1{
+    font-size:28px;
+  }
+
+  .about-hero p{
+    font-size:15px;
+  }
+
+  .about-company-text h2,
+  .about-services-section h2,
+  .industries-section h2,
+  .about-values-section h2,
+  .vision-box h2,
+  .mission-box h2{
+    font-size:26px;
+  }
+
+  .about-company-text p,
+  .vision-box p,
+  .mission-box p,
+  .about-service-card p,
+  .about-value-card p{
+    font-size:14px;
+  }
+
+  .about-service-card img{
+    height:200px;
+  }
+
+  .industry-card{
+    height:240px;
+  }
+
+  .industry-overlay h3{
+    font-size:18px;
+  }
+
+  .industry-overlay p{
+    font-size:13px;
+  }
+
+  .vision-box,
+  .mission-box{
+    padding:24px 18px;
+  }
+
+  .about-value-card h3{
+    font-size:18px;
+  }
+}
+
+
 
 /* Products Page */
 
@@ -1445,6 +1904,194 @@ font-size:30px;
 }
 
 
+/* =========================
+   PRODUCTS PAGE RESPONSIVE
+========================= */
+
+.products-intro-text p{
+  line-height:1.8;
+}
+
+.product-category-content p{
+  line-height:1.8;
+}
+
+.product-card p{
+  line-height:1.7;
+}
+
+.product-card ul li{
+  line-height:1.6;
+}
+
+@media (max-width: 1100px){
+
+  .products-intro-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .products-card-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+  }
+}
+
+@media (max-width: 992px){
+
+  .products-hero{
+    height:420px;
+    padding:0 20px;
+  }
+
+  .products-hero-content{
+    max-width:100%;
+  }
+
+  .products-hero-content h1{
+    font-size:42px;
+    line-height:1.2;
+    letter-spacing:1px;
+  }
+
+  .products-hero-content p{
+    font-size:18px;
+    line-height:1.7;
+  }
+
+  .products-intro-section,
+  .product-category-section,
+  .products-card-section,
+  .products-cta-section{
+    padding:70px 0;
+  }
+
+  .products-intro-grid,
+  .product-category-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .product-category-grid.reverse .product-category-image,
+  .product-category-grid.reverse .product-category-content{
+    order:unset;
+  }
+
+  .products-intro-text h2,
+  .product-category-content h2,
+  .products-title,
+  .products-cta-section h2{
+    font-size:32px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .products-hero{
+    height:360px;
+  }
+
+  .products-hero-content h1{
+    font-size:34px;
+  }
+
+  .products-hero-content p{
+    font-size:16px;
+  }
+
+  .products-intro-section,
+  .product-category-section,
+  .products-card-section,
+  .products-cta-section{
+    padding:60px 0;
+  }
+
+  .products-intro-grid,
+  .product-category-grid,
+  .products-card-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .products-intro-text h2,
+  .product-category-content h2,
+  .products-title,
+  .products-cta-section h2{
+    font-size:28px;
+  }
+
+  .products-intro-text p,
+  .product-category-content p,
+  .products-cta-section p,
+  .product-list li,
+  .product-card p,
+  .product-card ul li{
+    font-size:15px;
+  }
+
+  .products-intro-image img,
+  .product-category-image img{
+    border-radius:8px;
+  }
+
+  .product-card img{
+    height:220px;
+  }
+
+  .product-card-content{
+    padding:22px;
+  }
+
+  .product-card h3{
+    font-size:22px;
+  }
+}
+
+@media (max-width: 480px){
+
+  .products-hero{
+    height:300px;
+  }
+
+  .products-hero-content h1{
+    font-size:28px;
+  }
+
+  .products-hero-content p{
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  .products-intro-text h2,
+  .product-category-content h2,
+  .products-title,
+  .products-cta-section h2{
+    font-size:24px;
+  }
+
+  .products-intro-text p,
+  .product-category-content p,
+  .products-cta-section p,
+  .product-list li,
+  .product-card p,
+  .product-card ul li{
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  .product-card img{
+    height:200px;
+  }
+
+  .product-card-content{
+    padding:18px;
+  }
+
+  .product-card h3{
+    font-size:20px;
+  }
+}
+
 
 
 /* CONTACT PAGE */
@@ -1498,6 +2145,7 @@ font-size:30px;
   overflow:hidden;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
   transition:transform 0.3s ease, box-shadow 0.3s ease;
+  word-break:break-word;
 }
 
 .contact-card::before{
@@ -1587,5 +2235,150 @@ font-size:30px;
 
   .contact-card p{
     font-size:17px;
+  }
+}
+
+/* =========================
+   CONTACT PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 992px){
+
+  .contact-info-section{
+    padding:80px 0;
+  }
+
+  .contact-cards-grid{
+    max-width:760px;
+    gap:25px;
+  }
+
+  .contact-page-logo{
+    width:160px;
+  }
+
+  .contact-info-section h1{
+    font-size:38px;
+  }
+
+  .contact-intro{
+    font-size:16px;
+    margin:0 auto 35px;
+  }
+
+  .contact-card{
+    padding:34px 24px;
+  }
+
+  .contact-card h3{
+    font-size:24px;
+  }
+
+  .contact-card p{
+    font-size:17px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .contact-info-section{
+    padding:60px 0;
+  }
+
+  .contact-logo-wrap{
+    margin-bottom:20px;
+  }
+
+  .contact-page-logo{
+    width:140px;
+  }
+
+  .contact-info-section h1{
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  .contact-intro{
+    font-size:15px;
+    line-height:1.7;
+    margin:0 auto 30px;
+  }
+
+  .contact-cards-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .contact-card{
+    padding:28px 20px;
+    border-radius:10px;
+  }
+
+  .contact-card:hover{
+    transform:translateY(-5px);
+  }
+
+  .contact-card-icon{
+    width:60px;
+    height:60px;
+    font-size:24px;
+    margin:0 auto 15px;
+  }
+
+  .contact-card h3{
+    font-size:22px;
+    margin-bottom:10px;
+  }
+
+  .contact-card p{
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:8px;
+  }
+
+  .contact-card span{
+    font-size:13px;
+  }
+}
+
+@media (max-width: 480px){
+
+  .contact-info-section{
+    padding:50px 0;
+  }
+
+  .contact-page-logo{
+    width:120px;
+  }
+
+  .contact-info-section h1{
+    font-size:26px;
+  }
+
+  .contact-intro{
+    font-size:14px;
+    margin:0 auto 25px;
+  }
+
+  .contact-card{
+    padding:24px 16px;
+  }
+
+  .contact-card-icon{
+    width:54px;
+    height:54px;
+    font-size:22px;
+  }
+
+  .contact-card h3{
+    font-size:20px;
+  }
+
+  .contact-card p{
+    font-size:15px;
+  }
+
+  .contact-card span{
+    font-size:12px;
   }
 }
