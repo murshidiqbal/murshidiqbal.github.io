@@ -1919,22 +1919,6 @@ font-size:30px;
    PRODUCTS PAGE RESPONSIVE
 ========================= */
 
-.products-intro-text p{
-  line-height:1.8;
-}
-
-.product-category-content p{
-  line-height:1.8;
-}
-
-.product-card p{
-  line-height:1.7;
-}
-
-.product-card ul li{
-  line-height:1.6;
-}
-
 @media (max-width: 1100px){
 
   .products-intro-grid{
